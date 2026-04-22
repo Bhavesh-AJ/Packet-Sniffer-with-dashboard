@@ -1,0 +1,138 @@
+:root {
+    --primary: #ff1a1a;
+    --secondary: #660000;
+    --bg-soft: #1a0000;
+}
+
+/* GLOBAL */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: #000;
+    color: #f1f5f9;
+}
+
+/* HEADER */
+.topbar {
+    height: 70px;
+    display: flex;
+    align-items: center;
+    padding: 0 30px;
+    border-bottom: 1px solid var(--bg-soft);
+}
+
+.logo h2 {
+    margin: 0;
+    color: var(--primary);
+}
+
+.logo span {
+    font-size: 14px;
+    color: #888;
+}
+
+/* MAIN */
+.main {
+    padding: 20px 30px;
+}
+
+/* CARDS */
+.top-cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+}
+
+.card {
+    background: #050505;
+    border: 1px solid var(--bg-soft);
+    box-shadow: 0 0 10px var(--primary);
+    padding: 18px;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.card h2 {
+    color: var(--primary);
+}
+
+/* PANELS */
+.panel {
+    background: #050505;
+    border: 1px solid var(--bg-soft);
+    box-shadow: 0 0 8px var(--primary);
+    padding: 15px;
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+/* MID SECTION */
+.mid-section {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+/* 🔥 CHART SIZE CONTROL */
+#trendChart {
+    width: 100% !important;
+    height: 220px !important;
+}
+
+#gaugeChart {
+    width: 100% !important;
+    height: 180px !important;
+}
+
+/* TABLE */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th {
+    color: var(--primary);
+    text-align: left;
+    padding: 10px;
+}
+
+td {
+    padding: 10px;
+    border-bottom: 1px solid #111;
+}
+
+.status-ok {
+    color: #22c55e;
+}
+
+.status-bad {
+    color: var(--primary);
+}
+
+/* BOTTOM */
+.bottom {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin-top: 20px;
+}
+
+/* ALERT */
+#alerts {
+    color: var(--primary);
+}
+
+.alert-item {
+    border: 1px solid var(--primary);
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+}
+/* 🔥 FIX bottom charts height */
+#barChart,
+#donutChart {
+    max-height: 180px;
+}

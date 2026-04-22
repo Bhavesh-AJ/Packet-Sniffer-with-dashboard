@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bhavesh Dashboard</title>
+
+    <link rel="stylesheet" href="/static/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+
+<div class="topbar">
+    <div class="logo">
+        <h2>Network Dashboard</h2>
+        <span>Bhavesh AJ and Arun Kumar</span>
+    </div>
+</div>
+
+<div class="main">
+
+    <!-- CARDS -->
+    <div id="cards" class="top-cards"></div>
+
+    <!-- MID SECTION -->
+    <div class="mid-section">
+
+        <div class="panel">
+            <h3>Traffic Trend</h3>
+            <canvas id="trendChart"></canvas>
+        </div>
+
+        <div class="panel">
+            <h3>Risk Score</h3>
+            <canvas id="gaugeChart"></canvas>
+            <h2 id="riskValue">0%</h2>
+        </div>
+
+    </div>
+
+    <!-- TABLE -->
+    <div class="panel table-panel">
+        <h3>Packet Activity</h3>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Src</th>
+                    <th>Dst</th>
+                    <th>Protocol</th>
+                    <th>Port</th>
+                    <th>Size</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+
+            <tbody id="table"></tbody>
+        </table>
+    </div>
+
+    <!-- BOTTOM -->
+    <div class="bottom">
+
+        <div class="panel">
+            <h3>Protocol Split</h3>
+            <canvas id="barChart"></canvas>
+        </div>
+
+        <div class="panel">
+            <h3>Threat Types</h3>
+            <canvas id="donutChart"></canvas>
+        </div>
+
+        <div class="panel">
+            <h3>Alerts</h3>
+            <div id="alerts"></div>
+        </div>
+
+    </div>
+
+</div>
+
+<script src="/static/script.js"></script>
+
+</body>
+</html>
