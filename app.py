@@ -3,7 +3,7 @@ from packet_engine import analyze_pcap
 
 app = Flask(__name__)
 
-stats, packets = analyze_pcap("test_data.pcap")
+stats, packets = analyze_pcap("test_safe.pcap")
 
 @app.route("/")
 def home():
